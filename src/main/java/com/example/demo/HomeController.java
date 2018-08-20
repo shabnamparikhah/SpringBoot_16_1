@@ -1,0 +1,15 @@
+package com.example.demo;
+
+import org.springframework.web.bind.annotation.RequestMapping;
+
+public class HomeController {
+    @RequestMapping("/")
+    public String index(){
+        return "index";
+    }
+
+    @RequestMapping("/2")
+    public String page2(){
+        return "page2";
+    }
+}
